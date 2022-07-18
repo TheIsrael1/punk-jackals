@@ -1,0 +1,174 @@
+.about{
+    width: 100%;
+    background-color: #f8f9fa;
+    font-family: 'Revalia', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileNav{
+    display: none;
+}
+
+
+.top{
+    height: 30vh;
+    width: 100%;
+    padding: 0 3rem;
+    background-color: #a63c06;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    left: -100px;
+    top: 4rem;
+}
+
+
+.navCon{
+    display: flex;
+    padding: 1rem 0;
+    font-family: 'Marck Script', cursive;
+    position: relative;
+    z-index: 2;
+}
+
+.navItem{
+    font-size: 28px;
+    margin-right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.navItem:hover{
+    color: #fbf2c0;
+    text-decoration: line-through;
+}
+
+.pageTitleCon{
+    position: relative;
+    margin-bottom: .25rem;
+    z-index: 2;
+}
+
+.pageTitle{
+    font-size: 70px;
+    color: #fbf2c0;
+    font-weight: 700;
+    font-family: 'Chango', cursive;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fcab64;
+    padding: 3rem;
+}
+
+.paragraph{
+    font-size: 34px;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.rightProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creditItem{
+    background-color: #dee2e6;
+    height: 12rem;
+    min-width: 12rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.itemImg{
+width: 13rem;
+object-fit: contain;
+object-position: center;
+}
+
+.creditTitleCon{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #a63c06;
+}
+
+.profileItem{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .mobileNav{
+        display: block;
+        position: absolute;
+        right: .5rem;
+        top: .5rem;  
+    }
+
+    .top{
+        height: 25vh;
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .circle{
+        top: 0;
+        left: -10rem;
+    }
+    
+    .navCon{
+        display: none;
+    }
+
+    .pageTitleCon{
+        margin-top: 3rem;
+    }
+
+    .pageTitle{
+        font-size: 60px;
+    }
+
+    .hero{
+        padding: 1.5rem;
+    }
+   
+
+    .paragraph{
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+
+    .profileItem{
+        flex-direction: column;
+    }
+
+    .rightProfile{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .top{
+        height: 20vh;
+    }
+    
+    .pageTitle{
+        font-size: 50px;
+    }
+}

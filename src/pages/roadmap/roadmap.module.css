@@ -1,0 +1,161 @@
+.about{
+    width: 100%;
+    background-color: #f8f9fa;
+    font-family: 'Revalia', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileNav{
+    display: none;
+}
+
+
+.top{
+    height: 30vh;
+    width: 100%;
+    padding: 0 3rem;
+    background-color: #a63c06;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    left: -100px;
+    top: 4rem;
+}
+
+
+.navCon{
+    display: flex;
+    padding: 1rem 0;
+    font-family: 'Marck Script', cursive;
+    position: relative;
+    z-index: 2;
+}
+
+.navItem{
+    font-size: 28px;
+    margin-right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.navItem:hover{
+    color: #fbf2c0;
+    text-decoration: line-through;
+}
+
+.pageTitleCon{
+    position: relative;
+    margin-bottom: .25rem;
+    z-index: 2;
+}
+
+.pageTitle{
+    font-size: 70px;
+    color: #fbf2c0;
+    font-weight: 700;
+    font-family: 'Chango', cursive;
+}
+
+.hero{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #fcab64;
+    padding: 3rem;
+}
+
+
+
+.listItemCon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.listImg{
+    width: 70px;
+}
+
+.listItem{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    margin-left: .5rem;
+}
+
+.listTitle{
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.paragraph{
+    font-size: 34px;
+    margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .mobileNav{
+        display: block;
+        position: absolute;
+        right: .5rem;
+        top: .5rem;  
+    }
+
+    .top{
+        height: 25vh;
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .circle{
+        top: 0;
+        left: -10rem;
+    }
+    
+    .navCon{
+        display: none;
+    }
+
+    .pageTitleCon{
+        margin-top: 3rem;
+    }
+
+    .pageTitle{
+        font-size: 60px;
+    }
+
+    .hero{
+        padding: 1.5rem;
+    }
+
+    .listImg{
+        width: 40px;
+    }
+
+    .listItem{
+        font-size: 18px;
+    }
+
+    .paragraph{
+        font-size: 28px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .top{
+        height: 20vh;
+    }
+    
+    .pageTitle{
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,197 @@
+.home{
+    width: 100%;
+    background-color: #f8f9fa;
+    font-family: 'Revalia', cursive;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mobileNav{
+    display: none;
+}
+
+.hero{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heroLeft{
+    height: 100%;
+    background-color: #fcab64;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.eclipse{
+    position: absolute;
+    left: -4rem;
+    top:-4.5rem;
+}
+
+.navCon{
+    display: flex;
+    padding: 2rem 0;
+    font-family: 'Marck Script', cursive;
+    z-index: 1;
+}
+
+.navItem{
+    font-size: 24px;
+    margin-right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.navItem:hover{
+    color:#a63c06;
+    text-decoration: line-through;
+}
+
+.titleCon{
+    margin-bottom: 8rem;
+    z-index: 1;
+}
+
+.heroTitle{
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: .25rem;
+    color: #a63c06;
+    font-family: 'Chango', cursive;
+}
+
+.heroDescription{
+    font-size: 24px;
+    color: #f9f5f3;
+}
+
+.socialCon{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.socialArrow{
+    position: absolute;
+    width: 90px;
+    top: -7rem;
+    left: -2rem;
+    -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+}
+
+
+.socialItem{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    
+}
+
+
+.heroRight{
+    height: 100%;
+    background-color: #a63c06;
+}
+
+.socialIconText{
+    font-size: 24px;
+    margin-right: .5rem;
+    cursor: pointer;
+    color: #c35325;
+    transition: all .2s ease-out;
+}
+
+.socialIconText:hover{
+    color: #411804;
+}
+
+
+.heroImg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.memoSection{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #a63c06;
+    padding: 5rem 3rem;
+}
+
+.memoTitle{
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: #1b0d00;
+    font-family: 'Chango', cursive;
+}
+
+.memoSubTitle{
+    font-size: 24px;
+    margin-bottom: 3rem;
+    color: #fdf55e;
+}
+
+.memoP{
+    line-height: 2rem;
+    font-size: 20px;
+    margin-bottom: 3rem;
+    color: #f9f5f3;
+}
+
+@media screen and (max-width: 768px) {
+    .mobileNav{
+        display: block;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        
+    }
+
+    .navCon{
+        display: none;
+    }
+    
+    .heroLeft{
+        padding: 0 1.5rem;
+    }
+
+    .hero{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titleCon{
+        margin-top: 8rem;
+        z-index: 1;
+    }
+
+    .heroTitle{
+        font-size:60px;
+    }
+
+    .socialIconText{
+        font-size: 18px;
+        margin-right: .5rem;
+    }
+
+    .heroRight{
+        display: none;
+    }
+
+    .memoSection{
+        padding: 2rem 1.5rem;
+    }
+
+    .socialArrow{
+        left: -1rem ;
+
+    }
+    
+}
