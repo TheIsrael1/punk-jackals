@@ -26,18 +26,18 @@ const Home = () => {
         pj4
     ]  
 
-    // useEffect(()=>{
-    //     const interval = setInterval(()=>{
-    //     if(currImg === images.length){
-    //         setCurrImg(0)
-    //     }else{
-    //         setCurrImg(currImg + 1)
-    //     }
-    //     },3000)
-    //     return () => {
-    //         clearInterval(interval);
-    //     };
-    // },[currImg])
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+        if(currImg === images.length){
+            setCurrImg(0)
+        }else{
+            setCurrImg(currImg + 1)
+        }
+        },3000)
+        return () => {
+            clearInterval(interval);
+        };
+    },[currImg])
 
   return (
     <div className={`${styles.home}`}>
