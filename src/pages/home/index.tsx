@@ -70,8 +70,7 @@ const Home = () => {
                             Punk Jackals
                         </h3>
                         <p className={`${styles.heroDescription}`}>
-                            Egyptian god anubis on the solana network
-                        </p>
+                        A collection of 10,000 affluent Jackals on the Solana network.                        </p>
                     </div>     
                     <div className={`${styles.socialCon}`}>
                     <img className={`${styles.socialArrow}`} src={socialArrow} alt="" />
